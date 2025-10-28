@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* 
+font-family: "Urbanist", sans-serif;
+font-family: "Inter", sans-serif;
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ffffff;
+    --secondary: #12372A;
+    --accent: #F1C30C;
+    --secondary-light: rgba(18, 55, 42, 0.8);
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+
+    .navTop {
+        background-color: var(--secondary);
+        font-family: "Inter", sans-serif;
+        height: 2.8rem;
+
+        padding: 0px 3rem;
+
+        .navContact {
+            color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .navContactInfo {
+                display: flex;
+                flex-direction: row;
+                font-size: 1rem;
+                gap: 2.5rem;
+
+                .navContactItem {
+
+                    img {
+                        height: auto;
+                        width: auto;
+                        margin: 0;
+                        margin-right: 0.7rem;
+                        margin-bottom: 0.4rem;
+                    }
+                }
+            }
+            
+            .navSocialMedia {
+                display: flex;
+                gap: 1rem;
+
+
+                .navSocialMediaIcon {
+                    display: flex;
+                    border-radius: 50%;
+                    background-color: var(--accent);
+                    height: 2rem;
+                    width: 2rem;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        padding: 0.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    navBot {
+        background-color: var(--primary);
+        font-family: "Urbanist", sans-serif;
+        padding: 0px 3rem;
+    }
+}
