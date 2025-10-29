@@ -18,7 +18,7 @@ function Navbar() {
             </div>
         </div>
         <div className='navBot'>
-
+          
         </div>
     </nav>
   )
