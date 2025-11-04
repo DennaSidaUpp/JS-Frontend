@@ -1,4 +1,5 @@
 import React from 'react'
+import BookNowButton from './BookNowButton'
 
 function Navbar() {
   return (
@@ -18,7 +19,14 @@ function Navbar() {
             </div>
         </div>
         <div className='navBot'>
-          
+          <div className='navBotLogo'><img src="./images/logos/storaid_logo.svg" alt="" /></div>
+          <div className='navBotPages'>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <BookNowButton></BookNowButton>
         </div>
     </nav>
   )
