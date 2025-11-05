@@ -15,10 +15,31 @@ font-family: "Inter", sans-serif;
     --secondary: #12372A;
     --accent: #F1C30C;
     --secondary-light: rgba(18, 55, 42, 0.8);
+    --creamcolor: #F1FFEA;
 }
 
 body {
     margin: 0px;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--creamcolor);
+}
+
+h4 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 1.563rem;
+    color: var(--accent);
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 nav {
@@ -127,4 +148,36 @@ nav {
 .bookingButtonHover:hover{
     background-color: var(--secondary);
     color: white;
+}
+
+.heroBackground {
+    height: 100%;
+    margin: auto;
+    background-color: var(--secondary-light);
+    padding-top: 12rem;
+    display: flex;
+    justify-content: center;
+
+    .heroContainer {
+        display: grid;
+        width: 75%;
+        grid-template-columns: auto 1fr;
+        gap: 6rem;
+
+        .heroText {
+            width: 85%;
+
+            p {
+                color: var(--primary);
+                padding: 0.5rem 0rem;
+            }
+        }
+
+        .heroImage {
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
 }
