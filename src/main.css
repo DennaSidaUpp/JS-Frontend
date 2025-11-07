@@ -220,6 +220,7 @@ nav {
     padding-top: 6rem;
     display: flex;
     justify-content: center;
+    padding-bottom: 5rem;
 
     .aboutUsContainer {
         display: grid;
@@ -266,16 +267,6 @@ nav {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 1.5rem;
-                
-                .aboutUsTiles {
-                    border: var(--lightgray) 3px solid;
-                    border-radius: 12px;
-                    padding: 1.5rem 1rem 0rem 1rem;
-                }
-
-                .aboutUsTilesHover:hover {
-                    border: var(--accent) 3px solid;
-                }
             }
 
             .aboutUsContact {
@@ -301,6 +292,16 @@ nav {
     }
 }
 
+.tiles {
+    border: var(--lightgray) 3px solid;
+    border-radius: 12px;
+    padding: 1.5rem 1rem 0rem 1rem;
+}
+
+.tilesHover:hover {
+    border: var(--accent) 3px solid;
+}
+
 .partners {
     background-color: var(--beige);
     display: flex;
@@ -314,6 +315,53 @@ nav {
 
         .partnersLogo {
 
+        }
+    }
+}
+
+.services {
+    height: 100%;
+    margin: auto;
+    background-color: var(--primary);
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+
+    .servicesContainer {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+
+        .servicesTitle {
+            display: flex;
+        }
+
+        .servicesTextArea {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+
+            .servicesText {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .servicesGrid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 2rem;
+
+            .servicesGridTileArea {
+                display: grid;
+                grid-template-rows: auto auto;
+                gap: 1rem;
+            }
+
+            .servicesGridImage {
+                
+            }
         }
     }
 }

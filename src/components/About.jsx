@@ -29,11 +29,11 @@ function About() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi, non sodales augue. Phasellus eget elit gravida.</p>
                 </div>
                 <div className='aboutUsTileGrid'>
-                    <div className='aboutUsTiles aboutUsTilesHover'>
+                    <div className='tiles tilesHover'>
                         <h5>Vision</h5>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium.</p>
                     </div>
-                    <div className='aboutUsTiles aboutUsTilesHover'>
+                    <div className='tiles tilesHover'>
                         <h5>Mission</h5>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium.</p>
                     </div>
