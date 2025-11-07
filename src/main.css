@@ -17,6 +17,7 @@ font-family: "Inter", sans-serif;
     --secondary-light: rgba(18, 55, 42, 0.8);
     --creamcolor: #F1FFEA;
     --lightgray: #ECECEC;
+    --beige: #FAF8EC;
 }
 
 body {
@@ -245,7 +246,6 @@ nav {
                 left: 3%;
 
                 .aboutUsStats {
-                    border: red solid 1px;
                     text-align: center;
 
                     p {
@@ -297,6 +297,23 @@ nav {
 
                 }
             }
+        }
+    }
+}
+
+.partners {
+    background-color: var(--beige);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+
+    .partnersContainer {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+
+        .partnersLogo {
+
         }
     }
 }
