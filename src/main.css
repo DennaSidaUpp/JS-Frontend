@@ -74,6 +74,10 @@ p {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
 
     .navTop {
         background-color: var(--secondary);
@@ -154,6 +158,10 @@ nav {
                 color: black;
                 text-decoration: none;
             }
+
+            .active {
+                color: var(--accent);
+            }
         }
 
         .navBotBooking {
@@ -191,7 +199,7 @@ nav {
 
     .heroContainer {
         display: grid;
-        width: 75%;
+        width: 1430px;
         grid-template-columns: auto 1fr;
         gap: 6rem;
 
@@ -225,7 +233,7 @@ nav {
     .aboutUsContainer {
         display: grid;
         grid-template-columns: 1fr auto;
-        width: 75%;
+        width: 1430px;
         gap: 2rem;
 
         .aboutUsMedia {
@@ -309,7 +317,7 @@ nav {
     padding: 2rem 0rem;
 
     .partnersContainer {
-        width: 75%;
+        width: 1430px;
         display: flex;
         justify-content: space-between;
 
@@ -329,7 +337,7 @@ nav {
     padding-bottom: 5rem;
 
     .servicesContainer {
-        width: 75%;
+        width: 1430px;
         display: flex;
         flex-direction: column;
 
@@ -360,6 +368,50 @@ nav {
             }
 
             .servicesGridImage {
+                
+            }
+        }
+    }
+}
+
+.testimonials {
+    height: 100%;
+    margin: auto;
+    background-image: url(./images/testimonials_bg.svg);
+    background-color: var(--secondary-light);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 12rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12rem;
+
+    .testimonialsContainer {
+        width: 1430px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .testimonialsText {
+            text-align: center;
+            width: 1000px;
+            
+            h3 {
+                color: var(--primary);
+            }
+
+            p {
+                color: var(--primary);
+            }
+        }
+
+        .testimonialsGrid {
+            display: flex;
+            justify-content: space-between;
+
+            .testimonialsItem {
                 
             }
         }

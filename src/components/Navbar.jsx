@@ -1,5 +1,6 @@
 import React from 'react'
 import BookNowButton from './BookNowButton'
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -11,20 +12,20 @@ function Navbar() {
                   <div className='navContactItem'><img src="./images/icons/mail_icon.svg" alt="Email Adress" />contact@domain.com</div>
                 </div>
                 <div className='navSocialMedia'>
-                  <div className='navSocialMediaIcon'><a href="#"><img src="./images/icons/facebook_icon.svg" alt="Facebook" /></a></div>
-                  <div className='navSocialMediaIcon'><a href="#"><img src="./images/icons/twitter_icon.svg" alt="Twitter" /></a></div>
-                  <div className='navSocialMediaIcon'><a href="#"><img src="./images/icons/instagram_icon.svg" alt="Instagram" /></a></div>
-                  <div className='navSocialMediaIcon'><a href="#"><img src="./images/icons/youtube_icon.svg" alt="Youtube" /></a></div>
+                  <div className='navSocialMediaIcon'><a target='_blank' href="https://facebook.com"><img src="./images/icons/facebook_icon.svg" alt="Facebook" /></a></div>
+                  <div className='navSocialMediaIcon'><a target='_blank' href="https://x.com"><img src="./images/icons/twitter_icon.svg" alt="Twitter" /></a></div>
+                  <div className='navSocialMediaIcon'><a target='_blank' href="https://instagram.com"><img src="./images/icons/instagram_icon.svg" alt="Instagram" /></a></div>
+                  <div className='navSocialMediaIcon'><a target='_blank' href="https://youtube.com"><img src="./images/icons/youtube_icon.svg" alt="Youtube" /></a></div>
                 </div>
             </div>
         </div>
         <div className='navBot'>
           <div className='navBotLogo'><img src="./images/logos/storaid_logo.svg" alt="" /></div>
           <div className='navBotPages'>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Contact Us</a>
+            <NavLink to="/" >Home</NavLink>
+            <NavLink to="/about" >About Us</NavLink>
+            <NavLink to="/service" >Services</NavLink>
+            <NavLink to="/contact" >Contact Us</NavLink>
           </div>
           <BookNowButton></BookNowButton>
         </div>

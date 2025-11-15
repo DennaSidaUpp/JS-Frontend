@@ -1,18 +1,22 @@
-import About from "./components/About"
-import Hero from "./components/Hero"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import AboutUs from "./pages/AboutUs"
+import ContactUs from "./pages/ContactUs"
+
 import Navbar from "./components/Navbar"
-import Partners from "./components/Partners"
-import Services from "./components/Services"
 
 const App = () => {
   return (
-    <>
-    <Navbar />
-    <Hero/>
-    <About/>
-    <Partners/>
-    <Services/>
-    </>
+    <BrowserRouter>
+      <Navbar/>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<AboutUs />}/>
+          <Route path="/contact" element={<ContactUs />}/>
+        </Routes>
+      </main>
+    </BrowserRouter>
   )
 }
 
