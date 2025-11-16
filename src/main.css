@@ -189,6 +189,24 @@ nav {
     color: white;
 }
 
+.darkButton {
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 2rem;
+    background-color: var(--accent);
+    font-family: "Urbanist", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.darkButtonHover:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
 .heroBackground {
     height: 100%;
     margin: auto;
@@ -383,10 +401,10 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    padding-top: 12rem;
+    padding-top: 6rem;
     display: flex;
     justify-content: center;
-    padding-bottom: 12rem;
+    padding-bottom: 6rem;
 
     .testimonialsContainer {
         width: 1430px;
@@ -410,9 +428,243 @@ nav {
         .testimonialsGrid {
             display: flex;
             justify-content: space-between;
+            gap: 2rem;
+            padding-top: 1rem;
+        }
+    }
+}
 
-            .testimonialsItem {
-                
+.testimonialsItem {
+    background-color: var(--primary);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .rating {
+        padding-bottom: 1rem;
+        display: flex;
+    }
+
+    .comment {
+        color: var(--secondary);
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .avatarname {
+            display: flex;
+            align-items: center;
+
+            .avatar {
+                border-radius: 50%;
+            }
+
+            .name {
+                padding-left: 1.2rem;
+
+                p {
+                    font-size: 0.875rem;
+                    margin: 0;
+                }
+            }
+
+        }
+
+
+        .quote {
+            
+        }
+    }
+}
+
+.chooseUs {
+    height: 100%;
+    margin: auto;
+    background-color: var(--beige);
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+
+    .chooseUsContainer {
+        width: 1430px;
+        display: flex;
+        flex-direction: column;
+
+        .chooseUsTitle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 1rem;
+            align-items: center;
+        }
+
+        .chooseUsGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .chooseUsPerks {
+                display: flex;
+                flex-direction: column;
+
+                .chooseUsItem {
+                    display: flex;
+                    margin-top: 1rem;
+
+                    .chooseUsIcon {
+                        display: flex;
+                        background-color: var(--secondary);
+                        border-radius: 50%;
+                        margin: 0rem 2rem;
+                        height: 5rem;
+                        width: 5rem;
+                        padding: 1rem;
+                        aspect-ratio: 1/1;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .chooseUsText {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        p{
+                            margin: 0;
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .chooseUsImage {
+
+            }
+        }
+    }
+}
+
+.pricing {
+    height: 100%;
+    margin: auto;
+    background-color: var(--primary);
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+
+    .pricingContainer {
+        width: 1430px;
+        display: flex;
+        flex-direction: column;
+
+        .pricingTitle {
+            width: 650px;
+            margin-bottom: 1rem;
+        }
+
+        .pricingGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1.5rem;
+
+            .pricingItem {
+                border: var(--lightgray) 3px solid;
+                border-radius: 12px;
+                background-color: var(--creamcolor);
+                padding: 2rem;
+
+                .unitSize {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .fee {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    
+                    .feeImg {
+
+                    }
+
+                    .feePrice {
+                        h3{
+                            color: var(--accent);
+                            margin: 0;
+                        }
+                    }
+
+                    .feeMonth {
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                }
+
+                .feeInfo {
+                    text-align: center;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .feeLine {
+                    hr {
+                        border: 0;
+                        background-color: var(--secondary);
+                        height: 1px;
+                        opacity: 1;
+                    }
+                }
+
+                .feeList {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    margin-top: 2rem;
+
+                    .feeListItem {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .rentNowButton {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1rem;
+                }
+            }
+
+            #check {
+                background-image: url(/images/icons/check_circle_green.svg);
+                height: 13px;
+                width: 14px;
+            }
+
+            .pricingItemHover:hover {
+                background-color: var(--secondary);
+                color: var(--primary);
+
+                p, h6, h5 {
+                    color: var(--primary);
+                }
+
+                hr {
+                    background-color: var(--primary); 
+                }
+
+                #check {
+                    background-image: url(/images/icons/check_circle_yellow.svg);
+                }
             }
         }
     }
