@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonials"
 import Chooseus from '../components/Chooseus'
 import Pricing from '../components/Pricing'
 import Booknow from '../components/Booknow'
+import Blog from '../components/Blog'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Chooseus/>
       <Pricing/>
       <Booknow/>
+      <Blog/>
     </>
   )
 }

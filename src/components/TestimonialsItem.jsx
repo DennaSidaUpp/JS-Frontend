@@ -1,13 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+function stars (rating){
+  var total = [];
+  for (let i=1; i <= rating; i++){
+    total.push(<img src='./images/icons/star_icon.svg'/>)
+  }
 
+  return total;
+}
 
 const TestimonialsItem = ({item}) => {
   return (
       <div className='testimonialsItem'>
         <div className='rating'> 
-          rating
+          {stars(item.rating)}
         </div>
         <div className='comment'>
           <p>{item.comment}</p>
