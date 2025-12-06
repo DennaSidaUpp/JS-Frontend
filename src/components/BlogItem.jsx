@@ -1,19 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const text = document.querySelectorAll('.blogsItem')
-
-text.forEach(text => {
-  text.addEventListener('click', e => {
-    
-    const descr = text.querySelector('.blogDescription')
-    descr.classList.toggle('blogText')
-  })
-})
 
 const BlogItem = ({item}) => {
+
+  const handleClick = (event) => {
+    const clickedDiv = event.currentTarget;
+    const description = clickedDiv.querySelector('.blogDescription')
+    description.classList.toggle('blogText')
+
+  }
+
   return (
-    <div className='blogsItem blogsItemHover'>
+    <div className='blogsItem blogsItemHover' onClick={handleClick}>
       <div className='blogImg'><img className='articleImg' src={item.imageUrl} alt="" /></div>
       <div className='blogDate'>
         <div id='newsIcon'></div>
