@@ -1133,3 +1133,79 @@ footer {
         }
     }
 }
+
+.faqs {
+    height: 100%;
+    margin: auto;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+
+    .faqsContainer {
+        width: 1430px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+        .faqsList {
+
+
+            .faqCard {
+
+            }
+        }
+    }
+}
+
+.question {
+    display: flex;
+    background-color: var(--lightgray);
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 0.7rem;
+
+    p {
+        margin: 0;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+}
+
+.answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 300ms;
+    padding: 0 2rem;
+}
+
+.open .answer {
+    grid-template-rows: 1fr;
+}
+
+.open .question {
+    background-color: var(--accent);
+    p {
+        color: var(--primary);
+    }
+}
+
+.expandable {
+    min-height: 0px;
+}
+
+.faqsButton {
+    border: 0;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.open .faqsButton {
+    background-color: var(--accent);
+}
