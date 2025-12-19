@@ -915,3 +915,28 @@ footer {
         }
     }
 }
+
+.aboutHeader {
+    background-color: var(--secondary-light);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .aboutContainer {
+        display: grid;
+        width: 1430px;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+
+        p {
+            color: var(--primary);
+        }
+    }
+}
+
+.chooseUsAlt {
+    background-color: var(--primary);
+}

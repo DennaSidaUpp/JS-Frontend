@@ -9,7 +9,6 @@ import Pricing from '../components/Pricing'
 import Booknow from '../components/Booknow'
 import Blog from '../components/Blog'
 import Subscribe from '../components/Subscribe'
-import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -24,7 +23,6 @@ const Home = () => {
       <Booknow/>
       <Blog/>
       <Subscribe/>
-      <Footer/>
     </>
   )
 }
