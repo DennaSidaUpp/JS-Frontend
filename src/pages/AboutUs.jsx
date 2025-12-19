@@ -1,8 +1,18 @@
 import React from 'react'
+import Aboutheader from '../components/Aboutheader'
+import About from '../components/About'
+import Partners from '../components/Partners'
+import Testimonials from '../components/Testimonials'
+import Subscribe from '../components/Subscribe'
 
-const Chooseus = () => {
+const AboutUs = () => {
   return (
-    <div className='chooseUs'>
+    <>
+    <Aboutheader/>
+    <About/>
+    <Partners/>
+    <Testimonials/>
+        <div className='chooseUs chooseUsAlt'>
         <div className='chooseUsContainer'>
             <h4>Why Choose Us</h4>
             <div className='chooseUsTitle'>
@@ -46,7 +56,9 @@ const Chooseus = () => {
             </div>
         </div>
     </div>
+    <Subscribe/>
+    </>
   )
 }
 
-export default Chooseus
+export default AboutUs
